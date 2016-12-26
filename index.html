@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href='css/style.css' rel='stylesheet' />
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous'></script>
+    <script src='js/app.js'></script>
+    <title>Title of the document</title>
+  </head>
+
+  <body>
+    <div id='timer'>
+      <div class='top-wrap background-fill'>
+        <div class='display-wrap'>
+          <div class='break-alert semicircle-top hidden'>
+            <div class='break-alert-text'>Break Time</div>
+          </div>
+          <div class='work-alert semicircle-bottom hidden'>
+            <div class='work-alert-text'>Work Time</div>
+          </div>
+          <div id='display'></div>
+
+        </div>
+        <div class='centered shift-up'>
+        <button id='startPause' class='timer-button'>Start</button>
+        <button id='reset' class='timer-button'>Reset</button>
+        </div>
+      </div>
+      <div class='centered controls background-fill text'>
+        <div class='wrap'>
+          Break Time
+        </div>
+        <div class='wrap'>
+          Work Time
+        </div>
+      </div>
+      <div class='centered controls background-fill'>
+        <div class='wrap'>
+          <button id='btIncHrs' class='increase'>+</button>
+          <button id='btIncMin' class='increase'>+</button>
+        </div>
+        <div class='wrap'>
+          <button id='wtIncHrs' class='increase'>+</button>
+          <button id='wtIncMin' class='increase'>+</button>
+        </div>
+      </div>
+      <div class='centered background-fill'>
+        <div class='display-wrap-controls'>
+          <div id='breakDisplay' class='display'></div>
+          <div class='display-label'>HH : MM</div>
+        </div>
+        <div class='display-wrap-controls'>
+          <div id='workDisplay' class='display'></div>
+          <div class='display-label'>HH : MM</div>
+        </div>
+      </div>
+      <div class='centered controls background-fill'>
+        <div class='wrap'>
+
+          <button id='btDecHrs' class='decrease'>-</button>
+          <button id='btDecMin' class='decrease'>-</button>
+
+        </div>
+        <div class='wrap'>
+
+          <button id='wtDecHrs' class='decrease'>-</button>
+          <button id='wtDecMin' class='decrease'>-</button>
+
+        </div>
+      </div>
+      <div class='centered controls background-fill last'>
+        <div class='wrap'>
+          <button id='resetBT' class='reset'>Reset</button>
+        </div>
+        <div class='wrap'>
+          <button id='resetWT' class='reset'>Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
